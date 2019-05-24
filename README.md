@@ -2,6 +2,8 @@
 
 React component to render a simple calendar.
 
+![](https://wviveiro.com/assets/images/calendar.png)
+
 This project is integrated with [simple-date](https://github.com/wviveiro/simple-date), a light date component.
 
 ## Install
