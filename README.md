@@ -4,6 +4,11 @@ React component to render a simple calendar.
 
 This project is integrated with [simple-date](https://github.com/wviveiro/simple-date), a light date component.
 
+## Install
+```
+npm install wviveiro/input-date-calendar
+```
+
 ## Usage
 ```javascript
 import InputDateCalendar from 'input-date-calendar';
