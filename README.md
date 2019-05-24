@@ -65,7 +65,7 @@ const Form = () => {
 
 ## Languages
 
-The component is available in english and portuguese. The default language is language. To use portuguese just load
+The component is available in english and portuguese. The default language is english. To use portuguese just load
 
 ```javascript
 import InputDateCalendar from 'input-date-calendar/dist/portuguese';
