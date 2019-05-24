@@ -56,3 +56,28 @@ const Form = () => {
 6. **isDateDisabled**: `function` - Verifies if a specific date is disabled and don't let the customer select it.
 
 7. **disabled**: `boolean` - Disable changing field.
+
+
+## Languages
+
+The component is available in english and portuguese. The default language is language. To use portuguese just load
+
+```javascript
+import InputDateCalendar from 'input-date-calendar/portuguese';
+import 'input-date-calendar/dist/styles/index.css';
+
+```
+
+### Extending other languages:
+
+```javascript
+import generateCalendar from 'input-date-calendar/calendar';
+
+const Calendar = generateCalendar({
+    months: ['', 'Jan' ... 'Dec'],
+    weekdays: ['', 'Mon' ... 'Sun'],
+    btnfinish: 'DONE',
+    hasErrorButton: 'INVALID DATE',
+});
+
+```
