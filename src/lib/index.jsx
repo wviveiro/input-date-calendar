@@ -9,7 +9,7 @@ const hasErrorButton = 'INVALID DATE';
 
 const DateCalendar = (props) => {
     const _date = props.date;
-    let {format} = props;
+    let {format, disabled} = props;
     if (!format) format = 'YYYY-MM-DD';
     const [show, setShow] = useState(false);
 
@@ -19,6 +19,7 @@ const DateCalendar = (props) => {
     let hasError = false;
 
     const changeDate = (dt) => {
+        if (disabled) return null;
         props.onChange(dt.format(format));
     }
 
@@ -42,6 +43,7 @@ const DateCalendar = (props) => {
     const onOpenCalendar = (ev) => {
         ev.preventDefault();
         ev.stopPropagation();
+        if (disabled) return null;
         setShow(true);
     }
     
@@ -54,6 +56,7 @@ const DateCalendar = (props) => {
                 value={displayDate}
                 onMouseDown={(ev) => onOpenCalendar(ev)}
                 onChange={() => false}
+                disabled={disabled}
             />
             {show ? (
                 <div className="area-calendar-all">

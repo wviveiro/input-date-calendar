@@ -32,6 +32,7 @@ const Form = () => {
                 inputClassName="input-calendar"
                 onChange={onChange}
                 isDateDisabled={isDateDisabled}
+                disabled={false}
             />
         </div>
     );
@@ -50,4 +51,8 @@ const Form = () => {
 
 5. **inputClassName**: `string` - appends a class in the input field for the component
 
-6. **isDateDisabled**: `string` - Verifies if a specific date is disabled and don't let the customer select it.
+6. **onChange**: `function` - Triggers on changing date. The return is a date string in the same format as the prop **format**.
+
+6. **isDateDisabled**: `function` - Verifies if a specific date is disabled and don't let the customer select it.
+
+7. **disabled**: `boolean` - Disable changing field.
