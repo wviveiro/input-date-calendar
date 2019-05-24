@@ -78,7 +78,7 @@ import 'input-date-calendar/dist/styles/index.css';
 ```javascript
 import generateCalendar from 'input-date-calendar/dist/calendar';
 
-const Calendar = generateCalendar({
+const InputDateCalendar = generateCalendar({
     months: ['', 'Jan' ... 'Dec'],
     weekdays: ['', 'Mon' ... 'Sun'],
     btnfinish: 'DONE',
