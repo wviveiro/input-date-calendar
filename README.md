@@ -7,6 +7,7 @@ This project is integrated with [simple-date](https://github.com/wviveiro/simple
 ## Usage
 ```javascript
 import InputDateCalendar from 'input-date-calendar';
+import 'input-date-calendar/dist/styles/index.css';
 
 const Form = () => {
     const [date, setDate] = useState('');
