@@ -63,7 +63,7 @@ const Form = () => {
 The component is available in english and portuguese. The default language is language. To use portuguese just load
 
 ```javascript
-import InputDateCalendar from 'input-date-calendar/portuguese';
+import InputDateCalendar from 'input-date-calendar/dist/portuguese';
 import 'input-date-calendar/dist/styles/index.css';
 
 ```
@@ -71,7 +71,7 @@ import 'input-date-calendar/dist/styles/index.css';
 ### Extending other languages:
 
 ```javascript
-import generateCalendar from 'input-date-calendar/calendar';
+import generateCalendar from 'input-date-calendar/dist/calendar';
 
 const Calendar = generateCalendar({
     months: ['', 'Jan' ... 'Dec'],
