@@ -20,7 +20,7 @@ const Form = () => {
     const [date, setDate] = useState('');
 
     // onChange receives a simple-date object
-    const onChange = (dt) => setDate(dt.format('DD/MM/YYYY');
+    const onChange = (dt) => setDate(dt);
 
     // isDateDisabled receives a simple-date object and
     // expects a boolean return
