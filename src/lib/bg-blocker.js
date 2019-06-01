@@ -9,7 +9,7 @@ const create = () => {
     obj.style.bottom = '0px';
     obj.style.left = '0px';
     obj.style.right = '0px';
-    obj.style.zIndex = 1;
+    obj.style.zIndex = 99;
     document.body.append(obj);
 }
 
