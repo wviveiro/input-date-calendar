@@ -2,6 +2,8 @@
 
 React component to render a simple calendar.
 
+![](https://wviveiro.com/assets/images/calendar.png)
+
 This project is integrated with [simple-date](https://github.com/wviveiro/simple-date), a light date component.
 
 ## Install
@@ -18,7 +20,7 @@ const Form = () => {
     const [date, setDate] = useState('');
 
     // onChange receives a simple-date object
-    const onChange = (dt) => setDate(dt.format('DD/MM/YYYY');
+    const onChange = (dt) => setDate(dt);
 
     // isDateDisabled receives a simple-date object and
     // expects a boolean return
@@ -65,7 +67,7 @@ const Form = () => {
 
 ## Languages
 
-The component is available in english and portuguese. The default language is language. To use portuguese just load
+The component is available in english and portuguese. The default language is english. To use portuguese just load
 
 ```javascript
 import InputDateCalendar from 'input-date-calendar/dist/portuguese';
@@ -78,7 +80,7 @@ import 'input-date-calendar/dist/styles/index.css';
 ```javascript
 import generateCalendar from 'input-date-calendar/dist/calendar';
 
-const Calendar = generateCalendar({
+const InputDateCalendar = generateCalendar({
     months: ['', 'Jan' ... 'Dec'],
     weekdays: ['', 'Mon' ... 'Sun'],
     btnfinish: 'DONE',
