@@ -1,6 +1,5 @@
 import React, {useRef, useState, useEffect} from 'react';
 import date from 'simple-date';
-import bgBlocker from './bg-blocker';
 
 
 const language = {
@@ -113,17 +112,31 @@ const Calendar = (props) => {
     const onClose = () => {
         if (hasError && props.literaldate !== '') return shakeCalendar(ref.current);
         props.onClose();
-        bgBlocker.remove();
     }
-
     
 
     const _onClose = myCallback(onClose);
 
 
+
     useEffect(() => {
-        bgBlocker.create();
-        bgBlocker.onClick(_onClose);
+        const _md = (ev) => {
+            const calendar = ref.current;
+            let tgt = ev.target;
+
+            do {
+                if (tgt === calendar) {
+                    return;
+                }
+                tgt = tgt.parentNode;
+            } while (tgt);
+
+            _onClose();
+        }
+        document.addEventListener('mousedown', _md);
+        return () => {
+            document.removeEventListener('mousedown', _md);
+        }
     }, [_onClose]);
 
 
