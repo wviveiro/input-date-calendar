@@ -48,8 +48,8 @@ $errorColor: #b52f2f;
             }
 
             .arrow {
-                color: lighten(#000, 5);
                 font-size: 14px;
+                color: #FFF;
             }
         }
 
@@ -65,7 +65,6 @@ $errorColor: #b52f2f;
 
 
             .arrow {
-                color: darken(#FFF, 5);
                 font-size: 14px;
             }
 
@@ -92,7 +91,6 @@ $errorColor: #b52f2f;
             border-bottom: solid 1px #EEE;
 
             .arrow {
-                color: darken(#FFF, 5);
                 font-size: 14px;
             }
 
