@@ -34,8 +34,8 @@
       .date-calendar-container .date-calendar-view .date-calendar-header span {
         flex-grow: 1; }
       .date-calendar-container .date-calendar-view .date-calendar-header .arrow {
-        color: #0d0d0d;
-        font-size: 14px; }
+        font-size: 14px;
+        color: #FFF; }
     .date-calendar-container .date-calendar-view .date-calendar-day {
       display: flex;
       background: #FCFCFC;
@@ -45,7 +45,6 @@
       padding-bottom: 5px;
       border-bottom: solid 1px #EEE; }
       .date-calendar-container .date-calendar-view .date-calendar-day .arrow {
-        color: #f2f2f2;
         font-size: 14px; }
       .date-calendar-container .date-calendar-view .date-calendar-day .content {
         flex-grow: 1; }
@@ -63,7 +62,6 @@
       padding: 10px 0;
       border-bottom: solid 1px #EEE; }
       .date-calendar-container .date-calendar-view .date-calendar-year .arrow {
-        color: #f2f2f2;
         font-size: 14px; }
       .date-calendar-container .date-calendar-view .date-calendar-year .content {
         flex-grow: 1; }
